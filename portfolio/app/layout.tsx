@@ -1,14 +1,15 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
+import "@fortawesome/fontawesome-svg-core/styles.css";
 import TopNavBar from "./topNavBar";
 
 const inter = Inter({ subsets: ["latin"] });
 
 type metadata = {
-  title:string,
-  description:string
-}
+  title: string;
+  description: string;
+};
 
 export const metadata: Metadata = {
   title: "Ben Hood",
@@ -23,7 +24,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
-        <TopNavBar/>
+        <TopNavBar />
         {children}
       </body>
     </html>
