@@ -11,14 +11,14 @@ export default function Home() {
     <>
       <section
         id="home"
-        className="min-h-screen flex flex-col justify-center items-center bg-black text-white"
+        className="flex flex-col justify-start items-center bg-black text-white mt-14"
       >
-        <h1 className="text-5xl font-bold mb-4">Hi! I'm Ben</h1>
-        <p className="text-lg max-w-xl text-center">
+        <h1 className="text-5xl font-bold mb-4 ml-4 mr-4">Hi! I'm Ben</h1>
+        <p className="text-lg max-w-xl text-center ml-4 mr-4">
           I am an innovative software developer with a passion for problem
           solving, collaboration and continuous learning.
         </p>
-        <div className="flex justify-between w-full max-w-md mx-auto">
+        <div className="flex justify-between w-full max-w-md mx-auto mt-14 ml-4 mr-4">
           <a
             href="https://www.linkedin.com/in/ben-hood-webdev"
             className="text-lg font-semibold hover:text-gray-300"
@@ -50,7 +50,7 @@ export default function Home() {
             <FontAwesomeIcon icon={faEnvelope} className="text-4xl" />
           </a>
         </div>
-        <div className="m-24">
+        <div className="m-10">
           <FontAwesomeIcon
             icon={faArrowDown}
             className="text-4xl animate-up-down"
