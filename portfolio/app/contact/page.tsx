@@ -41,22 +41,22 @@ export default function Contact() {
               name="email"
               className="rounded-lg text-black"
             />
-            <ValidationError
+            {/* <ValidationError
               prefix="Email"
               field="email"
               errors={state.errors}
-            />
+            /> */}
             <p className="mb-3 mt-5">Message</p>
             <textarea
               id="message"
               name="message"
               className="rounded-lg text-black"
             />
-            <ValidationError
+            {/* <ValidationError
               prefix="Message"
               field="message"
               errors={state.errors}
-            />
+            /> */}
             <button
               type="submit"
               disabled={state.submitting}
