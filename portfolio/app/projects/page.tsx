@@ -13,6 +13,7 @@ const projects = [
       "/projects/readr/ben_profile.png",
       "/projects/readr/want_to_read.png",
     ],
+    url: "https://github.com/bhood239/finals-readr",
   },
   {
     title: "Photolabs",
@@ -24,6 +25,7 @@ const projects = [
       "/projects/photolabs/modal.png",
       "/projects/photolabs/favs.png",
     ],
+    url: "https://github.com/bhood239/photolabs",
   },
   {
     title: "Jungle",
@@ -35,6 +37,7 @@ const projects = [
       "/projects/jungle/sold_out.png",
       "/projects/jungle/cart.png",
     ],
+    url: "https://github.com/bhood239/jungle-rails",
   },
   {
     title: "Wikimaps",
@@ -46,6 +49,7 @@ const projects = [
       "/projects/wikimaps/modal.png",
       "/projects/wikimaps/profile.png",
     ],
+    url: "https://github.com/bhood239/wiki-maps",
   },
   {
     title: "Scheduler",
@@ -58,6 +62,7 @@ const projects = [
       "/projects/scheduler/edit.png",
       "/projects/scheduler/delete.png",
     ],
+    url: "https://github.com/bhood239/scheduler",
   },
 ];
 
@@ -73,6 +78,7 @@ export default function Projects() {
           title={project.title}
           description={project.description}
           screenshots={project.screenshots}
+          url={project.url}
         />
       ))}
     </div>
