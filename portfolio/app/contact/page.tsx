@@ -20,7 +20,8 @@ export default function Contact() {
         <div className="max-w-3xl mx-auto text-white">
           <h1 className="text-3xl font-bold mb-6 text-center">Get in touch!</h1>
           <form
-            onSubmit={handleSubmit}
+            action="https://formspree.io/f/meojnwwr"
+            method="POST"
             className="flex flex-col text-lg leading-relaxed"
           >
             <label htmlFor="name" className="mb-3">
@@ -41,22 +42,22 @@ export default function Contact() {
               name="email"
               className="rounded-lg text-black"
             />
-            {/* <ValidationError
+            <ValidationError
               prefix="Email"
               field="email"
               errors={state.errors}
-            /> */}
+            />
             <p className="mb-3 mt-5">Message</p>
             <textarea
               id="message"
               name="message"
               className="rounded-lg text-black"
             />
-            {/* <ValidationError
+            <ValidationError
               prefix="Message"
               field="message"
               errors={state.errors}
-            /> */}
+            />
             <button
               type="submit"
               disabled={state.submitting}
