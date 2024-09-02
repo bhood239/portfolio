@@ -1,5 +1,4 @@
 import { faJs, faReact } from "@fortawesome/free-brands-svg-icons";
-import { width } from "@fortawesome/free-brands-svg-icons/fa42Group";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Image from "next/image";
 
