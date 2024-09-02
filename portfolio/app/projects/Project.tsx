@@ -41,8 +41,9 @@ export default function Project({
         <p className="mb-4">{description}</p>
       </div>
       <div className="flex overflow-x-auto gap-5 pb-2 ">
-        {screenshots.map((screenshot) => (
+        {screenshots.map((screenshot, index) => (
           <Image
+            key={index}
             src={screenshot}
             height={600}
             width={600}

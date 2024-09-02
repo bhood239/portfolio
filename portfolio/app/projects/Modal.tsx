@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { useState } from "react";
 
 interface ModalProps {
@@ -7,7 +8,7 @@ interface ModalProps {
 
 const Modal = ({ image, onClose }: ModalProps) => {
   return (
-    <div className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-70 z-50 m-64">
+    <div className="w-screen h-screen fixed inset-0 flex items-center justify-center bg-black bg-opacity-70 z-50">
       <div className="relative bg-white p-4 rounded">
         <button
           onClick={onClose}
@@ -15,8 +16,10 @@ const Modal = ({ image, onClose }: ModalProps) => {
         >
           &times;
         </button>
-        <img
+        <Image
           src={image}
+          height={1000}
+          width={1000}
           alt="Large view"
           className="max-w-full max-h-screen object-contain"
         />
