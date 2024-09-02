@@ -30,11 +30,11 @@ export default function Home() {
           <div className="flex flex-col">
             <FontAwesomeIcon icon={faArrowUp} className="text-xl" />
             <span className="text-lg font-semibold text-gray-300">
-              That's me!
+              That&apos;s me!
             </span>
           </div>
         </div>
-        <h1 className="text-5xl font-bold mb-4 ml-4 mr-4">Hi! I'm Ben</h1>
+        <h1 className="text-5xl font-bold mb-4 ml-4 mr-4">Hi! I&apos;m Ben</h1>
         <p className="text-lg max-w-xl text-center ml-4 mr-4">
           I am an innovative software developer with a passion for problem
           solving, collaboration and continuous learning.
