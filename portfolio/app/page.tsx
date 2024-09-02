@@ -1,9 +1,9 @@
 "use client";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
-import About from "./about/page";
-import Contact from "./contact/page";
-import Projects from "./projects/page";
+import About from "./about/About";
+import Contact from "./contact/Contact";
+import Projects from "./projects/Projects";
 import { faEnvelope } from "@fortawesome/free-regular-svg-icons";
 import {
   faArrowDown,
