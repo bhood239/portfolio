@@ -15,7 +15,7 @@ export default function Project({
   screenshots,
 }: ProjectProps) {
   return (
-    <div>
+    <div className="mb-10">
       <div className="max-w-3xl mx-auto text-center">
         <h1 className="text-2xl font-bold mb-4">{title}</h1>
         <p className="mb-4">{description}</p>

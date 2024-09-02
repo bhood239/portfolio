@@ -46,7 +46,10 @@ export default function Home() {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <FontAwesomeIcon icon={faLinkedin} className="text-4xl" />
+            <div className="flex flex-col">
+              <FontAwesomeIcon icon={faLinkedin} className="text-4xl" />
+              <p className="text-base">LinkedIn</p>
+            </div>
           </a>
           <a
             href="https://github.com/bhood239"
@@ -54,7 +57,10 @@ export default function Home() {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <FontAwesomeIcon icon={faGithub} className="text-4xl" />
+            <div className="flex flex-col">
+              <FontAwesomeIcon icon={faGithub} className="text-4xl" />
+              <p className="text-base">Github</p>
+            </div>
           </a>
           <a
             href="https://flowcv.com/resume/biabbo28wk"
@@ -62,13 +68,19 @@ export default function Home() {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <FontAwesomeIcon icon={faBook} className="text-4xl" />
+            <div className="flex flex-col">
+              <FontAwesomeIcon icon={faBook} className="text-4xl" />
+              <p className="text-base">Resume</p>
+            </div>
           </a>
           <a
             href="mailto:benhood97@btinternet.com"
-            className="hover:text-gray-300"
+            className="text-lg font-semibold hover:text-gray-300"
           >
-            <FontAwesomeIcon icon={faEnvelope} className="text-4xl" />
+            <div className="flex flex-col">
+              <FontAwesomeIcon icon={faEnvelope} className="text-4xl" />
+              <p className="text-base">Email</p>
+            </div>
           </a>
         </div>
         <div className="m-10">
@@ -84,7 +96,8 @@ export default function Home() {
       <section id="projects">
         <Projects />
       </section>
-      <section id="contact">
+      <div className="h-11 bg-gradient-to-t from-white to-black"></div>
+      <section id="contact" className="py-16 px-4 bg-white text-gray-900">
         <Contact />
       </section>
     </>
